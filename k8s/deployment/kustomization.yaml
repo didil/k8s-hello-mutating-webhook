@@ -1,0 +1,8 @@
+resources:
+- deployment.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: CONTAINER_IMAGE
+  newName: quay.io/didil/hello-webhook
+  newTag: 0.1.8

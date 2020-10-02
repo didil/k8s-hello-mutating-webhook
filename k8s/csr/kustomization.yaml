@@ -1,0 +1,5 @@
+resources:
+- csr-role.yaml
+- csr-sa.yaml
+- csr-rolebinding.yaml
+- csr-job.yaml

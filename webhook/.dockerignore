@@ -1,0 +1,14 @@
+Dockerfile
+
+.git
+.gitignore
+
+.vscode 
+.idea
+.DS_Store
+
+.env.*
+
+*_test.go
+
+vendor/
