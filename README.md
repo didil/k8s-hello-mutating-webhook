@@ -27,6 +27,17 @@ Deploy to K8s cluster
 $ make k8s-deploy
 ```
 
+#### Mutated pod example
+```
+$ k run busybox-1 --image=busybox  --restart=Never -l=hello=true -- sleep 3600
+$ k exec busybox-1 -it -- ls /etc/config/hello.txt
+# The output should be:
+/etc/config/hello.txt
+$ k exec busybox-1 -it -- sh -c "cat /etc/config/hello.txt && echo"
+# The output should be:
+Hello from the admission controller !
+```
+We successfully mutated our pod spec and added an arbitary volume/file in there, yay !
 
 #### Cleanup
 Delete all k8s resources
