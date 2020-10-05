@@ -1,6 +1,8 @@
 ## K8s Hello Mutating Webhook
 A Kubernetes Mutating Admission Webhook example, using Go.
+This is a companion repository for the Article [Building a Kubernetes Mutating Admission Webhook: A “magic” way to inject a file into Pod Containers](https://medium.com/@didil/building-a-kubernetes-mutating-admission-webhook-7e48729523ed)
 
+This is proof of concept code, make sure to review carefully before using in a production system.
 
 #### Run tests
 ```
