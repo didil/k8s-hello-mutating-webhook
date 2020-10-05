@@ -3,7 +3,6 @@ package api
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 )
 
@@ -38,8 +37,6 @@ func writeJSON(w http.ResponseWriter, v interface{}) {
 		return
 	}
 
-	// write to logs for debugging
-	log.Printf("writeJSON: %s", string(b))
 	writeBytes(w, b)
 }
 
