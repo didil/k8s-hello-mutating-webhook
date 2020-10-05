@@ -5,4 +5,4 @@ kind: Kustomization
 images:
 - name: CONTAINER_IMAGE
   newName: quay.io/didil/hello-webhook
-  newTag: 0.1.8
+  newTag: 0.1.9
