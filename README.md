@@ -10,7 +10,7 @@ $ make test
 #### Deploy
 Define shell env:
 ```
-$ # define env vars
+# define env vars
 $ export CONTAINER_REPO=quay.io/my-user/my-repo
 $ export CONTAINER_VERSION=x.y.z
 ```
@@ -33,7 +33,7 @@ $ k run busybox-1 --image=busybox  --restart=Never -l=hello=true -- sleep 3600
 $ k exec busybox-1 -it -- ls /etc/config/hello.txt
 # The output should be:
 /etc/config/hello.txt
-$ k exec busybox-1 -it -- sh -c "cat /etc/config/hello.txt && echo"
+$ k exec busybox-1 -it -- sh -c "cat /etc/config/hello.txt"
 # The output should be:
 Hello from the admission controller !
 ```
